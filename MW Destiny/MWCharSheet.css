@@ -42,7 +42,7 @@
 .sheet-transparent {background:transparent;border:none}
 
 /*General Information and Battlemech Page Defaults*/
-.sheet-page-general {background-image:url(https://i.imgur.com/iTJd8XN.png);background-repeat:no-repeat;background-position:center center;background-size:cover;height:1029px;width:800px}
+.sheet-page-general {background-image:url(https://github.com/AgentofChange/WorkingFiles/blob/MW-Destiny-1.0/MW%20Destiny/Assets/DestinyCharP1_800x1029.png);background-repeat:no-repeat;background-position:center center;background-size:cover;height:1029px;width:800px}
 	.sheet-container-vital-factors {position:relative;width:800px;height:265px}
 		.sheet-field-name {position:absolute;width:347px;height:26px;left:96px;top:41px}
 		.sheet-field-faction {position:absolute;top:110px;left:108px;width:353px;height:16px}
@@ -170,7 +170,7 @@
 
 
 /*Stats, Skills, and Equipment Page Defaults*/
-.sheet-page-stats {background-image:url(https://i.imgur.com/HjcjTne.png);background-repeat:no-repeat;background-position:center center;background-size:cover;height:1029px;width:800px}
+.sheet-page-stats {background-image:url(https://github.com/AgentofChange/WorkingFiles/blob/MW-Destiny-1.0/MW%20Destiny/Assets/DestinyCharP2_800x1029.png);background-repeat:no-repeat;background-position:center center;background-size:cover;height:1029px;width:800px}
 	.sheet-container-attributes {position:relative;width:800px;height:185px}
 			.sheet-field-name {position:absolute;width:347px;height:26px;left:102px;top:41px}
 			.sheet-field-str {position:absolute;width:50px !important;height:45px;left:84px;top:130px;font-size: 33px;font-weight: bold;color: #3b2c3b}
@@ -300,8 +300,8 @@
 			.sheet-fatigue-2-4 {position:absolute;left:30px;top:68px}
 			.sheet-fatigue-3-4 {position:absolute;left:57px;top:68px}
 			.sheet-fatigue-stag {position:absolute;left:30px;top:88px}
-			.sheet-fatigue-ko {position:absolute;left:30px;top:109px}	
-		
+			.sheet-fatigue-ko {position:absolute;left:30px;top:109px}
+
 			/*Armor*/
 			.sheet-field-armor1 {position:absolute;width:159px;height:19px;left:67px;top:220px}
 			.sheet-field-armor2 {position:absolute;width:159px;height:19px;left:67px;top:240px}
