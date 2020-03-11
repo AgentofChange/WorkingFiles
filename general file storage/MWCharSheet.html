@@ -101,7 +101,7 @@
 			<div class="column-mech-top container-mechhardware">
 				<input type="text" class="field-mechtype font-small transparent" title="@{mechtype}" name="attr_mechtype" autocomplete="off" spellcheck="false">
 				<input type="text" class="field-mechweight font-small transparent" title="@{mechweight}" name="attr_mechweight" autocomplete="off" spellcheck="false">
-				<input type="number" class="field-mechton font-small transparent" title="@{mechton}" name="attr_mechmechton"  value="25" min="25" max="100" step="5">
+				<input type="number" class="field-mechton font-small transparent" title="@{mechton}" name="attr_mechmechton"  value="20" min="20" max="100" step="5">
 				<input type="text" class="field-mechmove font-small transparent" title="@{mechmove}" name="attr_mechmove" autocomplete="off" spellcheck="false">
 				<input type="number" class="field-mechheat font-small transparent" title="@{mechheat}" name="attr_mechheat"  value="0" min="0" step="1">
 				<textarea class="field-mechequipment font-small transparent" spellcheck="false" title="@{mechequipment}" name="attr_mechequipment"></textarea>
@@ -133,7 +133,35 @@
 			</div>
 			<div class="column-mech-bottom container-mechguns">
 				<!--Battlemech weapons line 1-->
-				<input type="text" class="field-mechgun1 font-small transparent" title="@{mechgun1}" name="attr_mechgun1" autocomplete="off" spellcheck="false">
+                <select class="field-mechgun1 font-small transparent" title="@{mechgun1}" name="attr_mechgun1">
+                    <option value="0" selected="selected">Punch/Kick</option>
+                    <option value="1">-/Kick</option>
+                </select>
+                <select class="field-mechgun1-damage font-small transparent" title="@{mechgun1-damage}" name="attr_mechgun1-damage">
+                    <option value="0" selected="selected">1/2</option>
+                    <option value="1">2/3</option>
+                    <option value="1">2/4</option>
+                    <option value="1">3/5</option>
+                    <option value="1">3/6</option>
+                    <option value="1">4/7</option>
+                    <option value="1">0/2</option>
+                    <option value="1">0/3</option>
+                    <option value="1">0/4</option>
+                    <option value="1">0/5</option>
+                    <option value="1">0/6</option>
+                    <option value="1">0/7</option>
+                </select>
+                <Label>
+                    <div class="field-mechgun1-type font-small" title="@{mechgun1-type}" name="attr_mechgun1-type">-</div>
+                    <div class="field-mechgun1-heat font-small" title="@{mechgun1-type}" name="attr_mechgun1-type">0</div>
+                    <div class="field-mechgun1-location font-small" title="@{mechgun1-type}" name="attr_mechgun1-type">-</div>
+                    <div class="field-mechgun1-pointblank font-small" title="@{mechgun1-type}" name="attr_mechgun1-type">OK</div>
+                    <div class="field-mechgun1-short font-small" title="@{mechgun1-type}" name="attr_mechgun1-type">-</div>
+                    <div class="field-mechgun1-medium font-small" title="@{mechgun1-type}" name="attr_mechgun1-type">-</div>
+                    <div class="field-mechgun1-long font-small" title="@{mechgun1-type}" name="attr_mechgun1-type">-</div>
+                </Label>
+<!--
+	    		<input type="text" class="field-mechgun1 font-small transparent" title="@{mechgun1}" name="attr_mechgun1" autocomplete="off" spellcheck="false">
 				<input type="text" class="field-mechgun1-damage font-small transparent" title="@{mechgun1-damage}" name="attr_mechgun1-damage" autocomplete="off" spellcheck="false">
 				<input type="text" class="field-mechgun1-type font-small transparent" title="@{mechgun1-type}" name="attr_mechgun1-type" autocomplete="off" spellcheck="false">
 				<input type="text" class="field-mechgun1-heat font-small transparent" title="@{mechgun1-heat}" name="attr_mechgun1-heat" autocomplete="off" spellcheck="false">
@@ -142,6 +170,7 @@
 				<input type="text" class="field-mechgun1-short font-small transparent" title="@{mechgun1-short}" name="attr_mechgun1-short" autocomplete="off" spellcheck="false">
 				<input type="text" class="field-mechgun1-medium font-small transparent" title="@{mechgun1-medium}" name="attr_mechgun1-medium" autocomplete="off" spellcheck="false">
 				<input type="text" class="field-mechgun1-long font-small transparent" title="@{mechgun1-long" name="attr_mechgun1-long" autocomplete="off" spellcheck="false">
+-->
 				<!--Battlemech weapons line 2-->			
 				<input type="text" class="field-mechgun2 font-small transparent" title="@{mechgun2}" name="attr_mechgun2" autocomplete="off" spellcheck="false">
 				<input type="text" class="field-mechgun2-damage font-small transparent" title="@{mechgun2-damage}" name="attr_mechgun2-damage" autocomplete="off" spellcheck="false">
@@ -224,22 +253,22 @@
 		<input type="number" class="field-skill-bonus4 font-large transparent" title="@{skill-bonus4}" name="attr_skill-bonus4"required maxlength="1" value="1" min="1" max="12" step="1">
 
 		<input type="text" class="field-skill5 font-large transparent" autocomplete="off" spellcheck="false" title="@{skill5}" name="attr_skill5">
-		<input type="number" class="field-skill-rating5 font-large transparent" title="@{skill-rating4}" name="attr_skill-rating4"required maxlength="1" value="1" min="1" max="6" step="1">
+		<input type="number" class="field-skill-rating5 font-large transparent" title="@{skill-rating5}" name="attr_skill-rating5"required maxlength="1" value="1" min="1" max="6" step="1">
 		<input type="number" class="field-skill-attribute5 font-large transparent" title="@{skill-attribute5}" name="attr_skill-attribute5"required maxlength="1" value="1" min="1" max="6" step="1">
 		<input type="number" class="field-skill-bonus5 font-large transparent" title="@{skill-bonus5}" name="attr_skill-bonus5"required maxlength="1" value="1" min="1" max="12" step="1">
 
 		<input type="text" class="field-skill6 font-large transparent" autocomplete="off" spellcheck="false" title="@{skill6}" name="attr_skill6">
-		<input type="number" class="field-skill-rating6 font-large transparent" title="@{skill-rating5}" name="attr_skill-rating5"required maxlength="1" value="1" min="1" max="6" step="1">
+		<input type="number" class="field-skill-rating6 font-large transparent" title="@{skill-rating6}" name="attr_skill-rating6"required maxlength="1" value="1" min="1" max="6" step="1">
 		<input type="number" class="field-skill-attribute6 font-large transparent" title="@{skill-attribute6}" name="attr_skill-attribute6"required maxlength="1" value="1" min="1" max="6" step="1">
 		<input type="number" class="field-skill-bonus6 font-large transparent" title="@{skill-bonus6}" name="attr_skill-bonus6"required maxlength="1" value="1" min="1" max="12" step="1">
 
 		<input type="text" class="field-skill7 font-large transparent" autocomplete="off" spellcheck="false" title="@{skill7}" name="attr_skill7">
-		<input type="number" class="field-skill-rating7 font-large transparent" title="@{skill-rating6}" name="attr_skill-rating6"required maxlength="1" value="1" min="1" max="6" step="1">
+		<input type="number" class="field-skill-rating7 font-large transparent" title="@{skill-rating7}" name="attr_skill-rating7"required maxlength="1" value="1" min="1" max="6" step="1">
 		<input type="number" class="field-skill-attribute7 font-large transparent" title="@{skill-attribute7}" name="attr_skill-attribute7"required maxlength="1" value="1" min="1" max="6" step="1">
 		<input type="number" class="field-skill-bonus7 font-large transparent" title="@{skill-bonus7}" name="attr_skill-bonus7"required maxlength="1" value="1" min="1" max="12" step="1">
 
 		<input type="text" class="field-skill8 font-large transparent" autocomplete="off" spellcheck="false" title="@{skill8}" name="attr_skill8">
-		<input type="number" class="field-skill-rating8 font-large transparent" title="@{skill-rating7}" name="attr_skill-rating7"required maxlength="1" value="1" min="1" max="6" step="1">
+		<input type="number" class="field-skill-rating8 font-large transparent" title="@{skill-rating8}" name="attr_skill-rating8"required maxlength="1" value="1" min="1" max="6" step="1">
 		<input type="number" class="field-skill-attribute8 font-large transparent" title="@{skill-attribute8}" name="attr_skill-attribute8"required maxlength="1" value="1" min="1" max="6" step="1">
 		<input type="number" class="field-skill-bonus8 font-large transparent" title="@{skill-bonus8}" name="attr_skill-bonus8"required maxlength="1" value="1" min="1" max="12" step="1">
 

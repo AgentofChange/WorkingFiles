@@ -136,8 +136,8 @@
 					.label-ll-struc {position: absolute;top: -3px;left: 5px}
 					.field-ll-struc {position: absolute;top: 11px;left: 5px;font-weight: bold;width: 35px;height: 18px;text-align: center;color: red}
 			.container-mechguns {width:70%}
-				.field-mechgun1 {position:absolute;top:39px;left: 261px;width: 143px;height: 16px;text-align: right}
-				.field-mechgun1-damage {position: absolute;top: 39px;left: 403px;width: 70px;height: 16px;text-align:center;font-weight: bold; text-transform: uppercase}
+				.field-mechgun1 {position:absolute;top:39px;left: 309px;width: 95px;height: 16px;text-align: right}
+				.field-mechgun1-damage {position: absolute;top: 39px;left: 423px;width: 50px;height: 16px;text-align:center;font-weight: bold; text-transform: uppercase}
 				.field-mechgun1-type {position: absolute;top: 39px;left: 479px;width: 27px;height: 16px;text-align:center;font-weight: bold; text-transform: uppercase}
 				.field-mechgun1-heat {position: absolute;top: 39px;left: 520px;width: 31px;height: 16px;text-align:center;font-weight: bold}
 				.field-mechgun1-location {position: absolute;top: 39px;left: 550px;width: 47px;height: 16px;text-align:center;font-size:10px;font-weight: bold; text-transform: uppercase}
@@ -331,3 +331,7 @@
 			.check-armor-8 {position:absolute;left:51px;top:22px}
 			.check-armor-9 {position:absolute;left:75px;top:22px}
 			.check-armor-10 {position:absolute;left:99px;top:22px}
+
+.field-name {
+    
+}
