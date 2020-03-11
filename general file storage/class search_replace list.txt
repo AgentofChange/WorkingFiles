@@ -1,0 +1,11 @@
+.e
+.f
+.t
+.l
+.hi
+.pa
+.ph
+.se
+.ch
+.con
+.col
