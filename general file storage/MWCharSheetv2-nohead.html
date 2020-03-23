@@ -1,12 +1,3 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>MWDCharsheet</title>
-<link href="MWCharSheet.css" rel="stylesheet" type="text/css">
-</head>
-<body style="">
-
 <!--START COPY HERE-->
 <!--Top of Charsheet Inputs-->
 <input type="checkbox" name="attr_tab" class="hidden tab-is-main" value="main" checked>
@@ -167,7 +158,7 @@
 				</div>		
 			</div>
             <!--Mech Weapons-->
-<!--			<button type="roll" name="roll_MechWep1" title="%{@{character_id}|mechgun1-type}" value="@{output_option} &{template:default} {{name= **?{Skill|Piloting|Gunnery} Check** }} {{**Bonus:**  [[?{SkillBonus|0}]] **Modifiers:**  [[?{Modifiers|0}]]}} {{**Result:**  [[2d6+?{SkillBonus|0}+?{Modifiers|0}]]}}"> </button>-->
+			<button type="roll" name="roll_MechWep1" title="%{@{character_id}|mechgun1-type}" value="@{output_option} &{template:default} {{name= **?{Skill|Piloting|Gunnery} Check** }} {{**Bonus:**  [[?{SkillBonus|0}]] **Modifiers:**  [[?{Modifiers|0}]]}} {{**Result:**  [[2d6+?{SkillBonus|0}+?{Modifiers|0}]]}}"> </button>
 			<div class="column-mech-bottom container-mechguns">
 				<!--Battlemech weapons line 1-->
                 <select class="field-mechgun1 font-small transparent" title="@{mechgun1}" name="attr_mechgun1">
@@ -508,7 +499,7 @@
 	<div class="container-details">
         <!--Skill Line 1-->
         <input type="text" class="field-skill1 font-medium transparent" autocomplete="off" spellcheck="false" title="@{skill1}" name="attr_skill1">
-        <input type="number" class="field-skill-rating1 font-large transparent" title="@{skill-rating1}" name="attr_skill-rating1" required maxlength="1" min="0" max="6">
+        <input type="number" class="field-skill-rating1 font-large transparent" title="@{skill-rating1}" name="attr_skill-rating1" required maxlength="1" value="1" min="1" max="6">
 		<select type="text" class="field-skill-attribute1 font-small transparent" title="@{skill-attribute1}" name="attr_skill-attribute1">
             <option value="blank" selected="selected"> </option>
             <option value="@{str}">STR</option>
@@ -834,6 +825,7 @@ on('change:edge-points', () => {
             });
     });
 });
+
 on('change:edg', () => {
     getAttrs(['edg'], values => {
         let edge = +values['edg'] ||0;
@@ -863,6 +855,7 @@ bodyparts.forEach(part => {
         });
     });
 });
+
 const bodypartsmax = ['head-armor', 'head-structure', 'torso-armor', 'torso-structure', 'arm-armor', 'arm-structure', 'leg-armor', 'leg-structure'];
 bodypartsmax.forEach(max => {
     on(`change:${max}-max`, () => {
@@ -881,5 +874,3 @@ bodypartsmax.forEach(max => {
 });
 </script>
 <!--NOTHING BEYOND THIS POINT	-->
-</body>
-</html>
